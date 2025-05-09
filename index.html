@@ -46,6 +46,35 @@
       font-size: 15px;
     }
 
+    .about-background {
+      background: url('https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      padding: 60px 20px;
+    }
+
+    .about-overlay {
+      background-color: rgba(255,255,255,0.92);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 1000px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .about-overlay h2 {
+      text-align: center;
+      color: #27ae60;
+      margin-bottom: 20px;
+    }
+
+    .about-overlay p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+
     .section {
       padding: 50px 20px;
       max-width: 1100px;
@@ -136,9 +165,9 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="section" id="about">
-    <h2>About Us</h2>
-    <div class="card">
+  <section class="about-background" id="about">
+    <div class="about-overlay">
+      <h2>About Us</h2>
       <p>POL KAT CONSULTING LLC is a Texas-based consulting firm helping startups and small businesses get off the ground. With over a year of operational expertise and led by Steven Kephart, we offer reliable legal structuring, financial advice, and market entry strategy across the US.</p>
     </div>
   </section>
@@ -189,7 +218,7 @@
     <p>&copy; 2025 POL KAT CONSULTING LLC. All rights reserved.</p>
   </footer>
 
-  <!-- Tawk.to Chat -->
+  <!-- Live Chat (Tawk.to) -->
   <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
